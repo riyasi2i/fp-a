@@ -5,6 +5,7 @@ import AgGrid from './AgGrid';
 import StackBarChart from './StackBarChart';
 import LoanInfo from './LoanInfo';
 import './App.css'
+import Navbar from './component/navbar';
 
 export default function App() {
   const [colDef,setColDef] = useState([
@@ -28,7 +29,7 @@ export default function App() {
   },[data])
   return (
     <div className='appContainer'>
-     
+      <Navbar />
       <Container >
         <Row>
         <div className='load_info'>

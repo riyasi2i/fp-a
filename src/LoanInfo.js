@@ -37,7 +37,7 @@ export default function LoanInfo({ userInput }) {
                 </InputGroup>
                 </Col>
                 <Col lg={3} className='mt-2' >
-                <Button onClick={calculateData} variant="primary" className='w-100 d-block mt-4'>Calculate</Button>
+                <Button onClick={calculateData} variant="primary" className='w-100 d-block mt-4 primary__btn'>Calculate</Button>
                 </Col>
             </Row>
         </Container>

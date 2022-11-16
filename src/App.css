@@ -1,5 +1,8 @@
 
-
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8faff;
+}
 .sheet-container {
   display: flex;
   align-items: center;
@@ -12,13 +15,74 @@
   justify-content: space-around;
   margin-top: 50px;
 }
-.appContainer{
+/* .appContainer{
   margin-top: 40px;
-}
+} */
 .load_info{
   padding-bottom: 50px;
 }
 .bar-chart{
   padding-top: 0px;
   height: 530px !important;
+}
+.ag-header-cell-label,.ag-cell {
+  font-family: 'Poppins', sans-serif;
+}
+.ag-root-wrapper.ag-ltr.ag-layout-normal {
+  border: 0;
+  background: #fff;
+  box-shadow: 0 2px 28px #00000017;
+  border-radius: 10px;
+}
+.form-container {
+  background: #fff;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 28px #00000017;
+}
+.recharts-responsive-container.bar-chart {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 28px #00000017;
+}
+.primary__btn{
+  background-image: linear-gradient(to right, #1765fd, #4fcb8d);
+  border: 0;
+}
+.primary__btn:hover{
+  background-image: linear-gradient(to right, #4fcb8d, #1765fd);
+  transition: all 0.5s ease-in-out;
+}
+.custom-tooltip{
+  background: #ffffff;
+  padding: 15px;
+  outline: none !important;
+  box-shadow: 0 2px 28px #00000017;
+  border-radius: 10px 10px 0 0;
+  min-width: 200px;
+  position: relative;
+
+}
+.custom-tooltip::after{
+  content: "";
+    background-image: linear-gradient(to right, #1765fd, #4fcb8d);
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+
+.custom-tooltip:hover,.custom-tooltip:focus,.custom-tooltip:focus-visible,.custom-tooltip:focus-within{
+  outline: 0 !important;
+  border: 0 !important;
+}
+.custom-tooltip .label{
+  font-weight: 500;
+  font-size: 18px;
+}
+.custom-tooltip .intro{
+  font-size: 13px;
+  font-weight: 400;
 }
